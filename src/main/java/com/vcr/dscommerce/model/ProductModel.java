@@ -1,5 +1,9 @@
 package com.vcr.dscommerce.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,7 +27,8 @@ public class ProductModel {
     private Double price;
 
     private String imgUrl;
-
+    
+    private Set<CategoryModel> categories = new HashSet<>();
 
 
 }
